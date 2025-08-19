@@ -1,0 +1,16 @@
+@Api_HostAddress = https://localhost:7277
+
+GET {{Api_HostAddress}}/weatherforecast/
+Accept: application/json
+Authorization: Bearer "YOUR_TOKEN"
+
+###
+
+POST {{Api_HostAddress}}/account/login
+Accept: application/json
+Content-type: application/json
+
+{
+    "Username": "Omar",
+    "Password": "123456"
+}
